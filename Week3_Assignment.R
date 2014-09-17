@@ -255,9 +255,9 @@ logicalvector <- function(x)
 
 colsumm <- function(df)
 {
- ## summ1 <- findsumm(x)
-    summ2 <- sapply(df2, function(x) find(x))
-    summ3 <- sapply(df2, function(x) logicalvector(x))
+ ## summ1 <- sapply(df, function(x) findsumm(x))
+    summ2 <- sapply(df, function(x) find(x))
+    summ3 <- sapply(df, function(x) logicalvector(x))
     summ <- list(summ2,summ3)
     return (summ)
 }
